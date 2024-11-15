@@ -15,7 +15,7 @@ public class Ex031 {
 
         double media = sal / salMinimo;
 
-        System.out.printf("Ele recebe: %.2f", media);
+        System.out.printf("O funcionário recebe %.2f salários-mínimos.", media);
 
     }
 }
