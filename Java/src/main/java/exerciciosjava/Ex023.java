@@ -8,8 +8,8 @@ public class Ex023 {
         //23) Escreva um programa que leia o nome de um mês e exiba a quantidade de dias que ele possui.
         // Considere apenas meses válidos.
 
-        System.out.println("Digite o nome do mês: ");
-        String mes = sc.nextLine();
+        System.out.print("Digite o nome do mês: ");
+        String mes = sc.nextLine().toLowerCase();
 
         switch (mes) {
             case "janeiro":
@@ -19,8 +19,16 @@ public class Ex023 {
             case "agosto":
             case "outubro":
             case "dezembro":
-                System.out.println("O mês " + mes + "tem 31 dias.");
+                System.out.println("O mês " + mes + " tem 31 dias.");
                 break;
+            case "fevereiro":
+            case "abril":
+            case "junho":
+            case "setembro":
+                System.out.println("O mês " + mes + " tem 29 dias.");
+                break;
+            default:
+                System.out.println("Esse mês não é valído.");
 
         }
 
