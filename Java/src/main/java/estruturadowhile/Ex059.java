@@ -1,17 +1,17 @@
-package estruturswhile;
+package estruturadowhile;
 import java.util.Scanner;
 
-public class Ex044 {
+public class Ex059 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //44) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "while" e exiba a média
-        // das idades.
+        //59) Crie um programa que leia o nome e a idade de 5 pessoas usando o loop "do-while" e exiba a
+        // média das idades.
 
         int n = 1;
         double soma = 0;
 
-        while (n <= 5) {
+        do {
             System.out.print("Digite o nome da " + n + " pessoa: ");
             String nome = sc.nextLine();
 
@@ -22,7 +22,7 @@ public class Ex044 {
             soma += idade;
 
             n++;
-        }
+        }while (n <= 5);
         System.out.printf("A media das idades é: %.2f", soma/5);
     }
 }
