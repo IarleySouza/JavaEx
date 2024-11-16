@@ -19,5 +19,5 @@ public class Ex061 {
         } while (cont <= n);
         System.out.println(soma);
     }
-    }
+
 }
